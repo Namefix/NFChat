@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+body {
+	background-color: #F8F8F8;
+	margin: 0;
+}
+
+button {
+	outline: none; 
+	border: none;
+	cursor: pointer;
+}
+button:focus {
+	outline: none; 
+	border: none;
+}
+
+input {
+	position: fixed;
+	width: 320px;
+	height: 54px;
+	background-color: #E6E6E6;
+	align-self: center;
+	margin-top: 115px;
+	margin-left: 20px;
+	border-radius: 18px 0px 0px 18px;
+	border: none;
+	outline: none;
+	font-family: "Roboto", sans-serif;
+	font-weight: thin;
+	font-size: 24px;
+	padding-left: 15px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.textstart {
+	font-family: "Roboto", sans-serif;
+	align-self: center;
+}
+
+.hello {
+	font-size: 72px;
+	font-weight: bold;
+	margin-bottom: 60px;
+	margin-left: 20px;
+}
+
+.enterusername {
+	position: fixed;
+	font-size: 18px;
+	font-weight: thin;
+	margin-top: 20px;
+	margin-left: 22px;
+}
+
+#sendbox {
+	display: grid;
+	position: fixed;
+	background-color: #DADADA;
+	width: 80px;
+	height: 54px;
+	margin-left: 340px;
+	margin-top: 115px;
+	align-self: center;
+	border-radius: 0px 18px 18px 0px;
+}
+
+.generalbox {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	height: 100%;
+ 	width: 100%;
+}
+
+.loginbox {
+	display: grid;
+ 	height: 500px;
+ 	width: 600px;
+ 	align-items: center;
+ 	grid-auto-columns: 1fr;
+ 	grid-template-columns: 1fr 3fr;
+}
+
+#useravatardiv {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-row: 1;
+}
+
+#avatar {
+	background: red;
+	border:2px solid darkred; 
+	height: 128px;
+	width: 128px;
+	border-radius: 100%;
+	align-self: center;
+	margin-left: 50px;
+}
+
+#usernamediv {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-row: 1;
+}
+
+.text {
+	font-family: "Roboto", sans-serif;
+	align-self: start;
+	justify-self: center;	
+}
+
+.title {
+	font-weight: 700;
+	font-size: 32px;
+	color: #000000;
+	grid-row: 1;
+	align-self: start;
+	justify-self: center;
+}
+
+.icon {
+	filter: invert(100%) sepia(10%) saturate(0%) hue-rotate(64deg) brightness(104%) contrast(104%);
+	align-self: center;
+	justify-self: center;
+	margin-top: 5px;
+	width: 128px;
+	height: 128px;
+}
+
+.generalbox {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	height: 100%;
+ 	width: 100%;
+}
+
+.selectbox {
+	display: grid;
+ 	height: 370px;
+ 	width: 600px;
+ 	grid-template-rows: 48px 350px;
+}
+
+#publicchathub {
+	display: grid;
+	width: 256px;
+	height: 256px;
+	grid-row: 1;
+	background-color: #373348;
+	border-radius: 45px;
+	justify-self: center;
+	align-self: center;
+	text-decoration: none;
+}
+
+.classhubtext {
+	font-weight: 400;
+	color: white;
+	font-size: 24px;
+}
+
+.classhubdesc {
+	font-weight: 100;
+	color: white;
+	font-size: 12px;
+}
+
+.hubselection {
+	display: grid;
+}
+
+#privatechathub {
+	display: grid;
+	width: 256px;
+	height: 256px;
+	grid-row: 1;
+	grid-column: 2;
+	background-color: #472ABA;
+	border-radius: 45px;
+	justify-self: center;
+	align-self: center;
+	text-decoration: none;
+}

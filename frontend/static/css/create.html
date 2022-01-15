@@ -1,0 +1,22 @@
+<body>
+	<div class="generalbox">
+		<div class="mastergrid">
+			<div class="create-grid-top">
+				<span class="create-text create-title">Create</span>
+				<button class="create-back" nfchat href="/roomlist">BACK</button>
+			</div>
+			<div class="create-grid-settings">
+				<div class="create-settings-name">
+					<span class="create-text create-property">Room Name</span>
+					<input id="create-settings-name-box" maxlength="30">
+					<input id="create-settings-name-color" type="color" value="#BDFF01">
+				</div>
+				<div class="create-settings-members">
+					<span class="create-text create-property" style="margin-top: 0;">Member Limit</span>
+					<input type="number" id="create-settings-members-count" min="2" max="16" value="6">
+				</div>
+				<button class="create-createroom" onclick="createRoom();">CREATE</button>
+			</div>
+		</div>
+	</div>
+</body>
