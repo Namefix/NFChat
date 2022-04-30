@@ -1,0 +1,136 @@
+/* ROOMLIST.HTML */
+
+.roomlist-generalbox {
+    display: flex;
+    align-items: start;
+    justify-items: start;
+    height: 100%;
+    width: 100%;
+}
+
+.roomlist-mastergrid {
+   display: grid;
+   width: 100%;
+   height: 100%;
+   grid-template-rows: max-content;
+}
+
+.roomlist-grid-top {
+   display: grid;
+   margin-top: 85px;
+   margin-left: 58px;
+   margin-right: 58px;
+   grid-column-start: 1;
+   grid-column-end: 1;
+   grid-template-columns: max-content;
+   grid-template-rows: max-content 7px max-content;
+}
+
+.roomlist-text {
+   font-family: "Roboto", sans-serif;
+   align-self: start;
+   justify-self: start;	
+}
+
+.roomlist-title {
+   font-weight: 700;
+   font-size: 32px;
+   color: #000000;
+}
+
+.roomlist-input {
+   width: 320px;
+   height: 54px;
+   background-color: #E6E6E6;
+   border-radius: 18px;
+   border: none;
+   outline: none;
+   font-family: "Roboto", sans-serif;
+}
+
+.roomlist-input:focus {
+   outline: none;
+}
+
+.roomlist-searchbox {
+   align-self: start;
+   justify-self: end;
+   font-size: 15px;
+   width: 175px;
+   height: 30px;
+   padding-left: 10px;
+   padding-right: 10px;
+   grid-column: 2;
+   grid-row: 3;
+}
+
+.roomlist-searchbox::placeholder {
+   color: black;
+   font-weight: 100;
+   font-style: italic;
+}
+
+.roomlist-create {
+   background-color: #E6E6E6;
+   font-family: "Roboto", sans-serif;
+   font-weight: 900;
+   font-size: 14px;
+   width: 100px;
+   height: 35px;
+   border-radius: 10px;
+   grid-column: 2;
+   justify-self: end;
+}
+
+.roomlist-rooms {
+   height: fit-content;
+   margin-block: 0;
+   list-style: none;
+   margin-left: 58px;
+   margin-top: 10px;
+   padding: 0;
+}
+
+.roomlist-rooms li {
+   background-color: #BDFF01;
+   margin-bottom: 10px;
+   padding: 20px 0px 20px 20px;
+   border-radius: 10px;
+   margin-right: 60px;
+   cursor: pointer;
+   display: flex;
+   justify-content: space-between;
+   transition-duration: 0.1s;
+}
+
+.roomlist-rooms li:hover {
+   filter: brightness(90%);
+}
+
+.roomlist-rooms div {
+   display: inline-block;
+}
+
+.roomlist-roomname {
+   font-weight: 700;
+   font-size: 20px;
+   color: #000000;
+}
+
+.roomlist-roomtag {
+   font-weight: 100;
+   font-size: 20px;
+   color: #000000;
+}
+
+.roomlist-usercount {
+   font-weight: 700;
+   font-size: 20px;
+   color: #000000;
+}
+
+.roomlist-maxusers {
+   font-weight: 300;
+   font-size: 18px;
+   color: #000000;
+}

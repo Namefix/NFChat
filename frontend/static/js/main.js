@@ -1,6 +1,7 @@
 import Start from "./views/Start.js";
 import RoomList from "./views/RoomList.js";
 import Create from "./views/Create.js";
+import Chat from "./views/Chat.js";
 
 const navigateTo = url => {
 	history.pushState(null,null,url);
@@ -11,7 +12,8 @@ const router = async () => {
 	const routes = [
 		{path: "/", view:Start},
 		{path: "/roomlist", view:RoomList},
-		{path: "/create", view:Create}
+		{path: "/create", view:Create},
+		{path: "/chat", view:Chat}
 	];
 
 	if(PlayerName == "" && location.pathname != "/") location.pathname = "/" 
@@ -36,13 +38,20 @@ const router = async () => {
 	const view = new match.route.view();
 	currentPage = location.pathname;
 
-
 	document.querySelector("#app").innerHTML = await view.getHTML();
 
 	if(location.pathname == "/roomlist") {
 		requestRoomList();
-		roomListElement = document.querySelector("#roomlist")
+		roomListElement = document.querySelector("#roomlist");
 	}
+	if(location.pathname == "/chat") {
+		requestRoomList();
+		chatBox = document.querySelector("#chatbox");
+	}
+
+	const event = new CustomEvent('pagechange', { detail: currentPage });
+
+	document.dispatchEvent(event);
 };
 
 window.addEventListener("popstate", router);
@@ -55,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				return;
 			}
 			PlayerName = document.querySelector(".start-input").value;
+			changeColor(AvatarColor);
 			changeUsername(PlayerName);
 		}
 
@@ -68,3 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	router();
 });
 
+document.addEventListener('router', function (e) { 
+	navigateTo(e.detail)
+ }, false);

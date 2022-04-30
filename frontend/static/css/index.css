@@ -124,15 +124,6 @@ input:focus {
 	justify-self: center;
 }
 
-.icon {
-	filter: invert(100%) sepia(10%) saturate(0%) hue-rotate(64deg) brightness(104%) contrast(104%);
-	align-self: center;
-	justify-self: center;
-	margin-top: 5px;
-	width: 128px;
-	height: 128px;
-}
-
 .generalbox {
  	display: flex;
  	align-items: center;
@@ -146,45 +137,4 @@ input:focus {
  	height: 370px;
  	width: 600px;
  	grid-template-rows: 48px 350px;
-}
-
-#publicchathub {
-	display: grid;
-	width: 256px;
-	height: 256px;
-	grid-row: 1;
-	background-color: #373348;
-	border-radius: 45px;
-	justify-self: center;
-	align-self: center;
-	text-decoration: none;
-}
-
-.classhubtext {
-	font-weight: 400;
-	color: white;
-	font-size: 24px;
-}
-
-.classhubdesc {
-	font-weight: 100;
-	color: white;
-	font-size: 12px;
-}
-
-.hubselection {
-	display: grid;
-}
-
-#privatechathub {
-	display: grid;
-	width: 256px;
-	height: 256px;
-	grid-row: 1;
-	grid-column: 2;
-	background-color: #472ABA;
-	border-radius: 45px;
-	justify-self: center;
-	align-self: center;
-	text-decoration: none;
 }

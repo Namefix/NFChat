@@ -1,0 +1,125 @@
+/* CREATE.HTML */
+
+.create-grid-top {
+	display: grid;
+	margin-top: 85px;
+	margin-left: 58px;
+	margin-right: 58px;
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-template-columns: max-content;
+	grid-template-rows: max-content;
+}
+
+.create-grid-settings {
+	display: grid;
+	margin-left: 58px;
+	margin-right: 58px;
+	grid-template-rows: 125px 100px;
+	grid-row: 2;
+}
+
+.create-text {
+	font-family: "Roboto", sans-serif;
+	align-self: start;
+	justify-self: start;	
+}
+
+.create-title {
+	font-weight: 700;
+	font-size: 32px;
+	color: #000000;
+}
+
+.create-property {
+	font-weight: 400;
+	font-size: 24px;
+	margin-top: 32px;
+	color: #000000;
+}
+
+.create-back {
+	background-color: #FF9D9D;
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-size: 14px;
+	width: 100px;
+	height: 35px;
+	border-radius: 10px;
+	grid-column: 2;
+	justify-self: end;
+	border: solid;
+	border-color: #FF6262;
+	border-width: 1.5px;
+}
+
+.create-settings-name {
+	display: grid;
+	grid-template-rows: 70px 50px;
+	grid-template-columns: 246px;
+}
+
+.create-settings-members {
+	display: grid;
+	grid-template-rows: 40px 50px;
+}
+
+[type="color"] {
+  -webkit-appearance: none;
+  padding: 0;
+  border: none;
+  border-radius: 18px;
+  width: 40px;
+  height: 40px;
+  grid-row: 2;
+}
+[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 18px;
+  padding: 0;
+}
+[type="color"]::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 18px;
+  padding: 0;
+}
+
+#create-settings-name-box {
+	background-color: #E6E6E6;
+	width: 240px;
+	height: 40px;
+	border: none;
+	border-radius: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: "Roboto", sans-serif;
+	font-weight: thin;
+	font-size: 18px;
+	grid-row: 2;
+}
+
+#create-settings-members-count {
+	font-family: "Roboto", sans-serif;
+	font-weight: thin;
+	font-size: 18px;
+	width: 64px;
+	height: 32px;
+	text-align: center;
+	background-color: #E6E6E6;
+	border-radius: 10px;
+	border: none;
+}
+
+#create-settings-members-count::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.create-createroom {
+	background-color: #E6E6E6;
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-size: 14px;
+	width: 100px;
+	height: 35px;
+	border-radius: 10px;
+}
