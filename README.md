@@ -1,5 +1,7 @@
 # NFChat
 
+<img src="image.png">
+
 # Install & Run
 
 1. npm install
